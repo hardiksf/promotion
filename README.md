@@ -3,6 +3,9 @@
 - Description source: [challenge](https://github.com/addisonglobal/web-technical-test)
 - Data source: [challenge API](https://github.com/addisonglobal/web-technical-test/blob/master/data.json)
 
+## Demo
+![Demo](./src/data/demo.gif)
+
 ## Result
 - Here is how screen looks on initial load.
 ![On load](./src/data/on-load.png)
