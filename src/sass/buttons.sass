@@ -1,0 +1,35 @@
+@mixin btn($text-color, $background, $bordor-color)
+    color: $text-color
+    background: $background
+    border: 2px solid $bordor-color
+
+.main-btn, .secondary-btn
+    display: flex
+    margin: 2vw 0
+    button
+        flex: 1
+        text-transform: uppercase
+        height: 15vw
+
+.main-btn
+    button
+        @include btn(white, $blueis-grey, $light-grey)
+        @include btn($dim-grey, none, $dim-grey)
+
+.all-promotions
+    margin-right: 1vw
+
+.secondary-btn
+    button
+        @include btn($dim-grey, $light-grey, grey)
+
+.main-btn 
+    .active
+        @include btn($dim-grey, none, $dim-grey)
+        @include btn(white, $blueis-grey, $light-grey)
+
+.sing-up
+    margin-left: 1vw
+.secondary-btn 
+    .sing-up
+        @include btn(white, $blueis-grey, $light-grey)

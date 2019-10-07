@@ -28,6 +28,12 @@ module.exports = {
                 'css-loader',
                 "sass-loader"
             ],
+        }, {
+            test: /\.html$/,
+            loader: 'html-srcsets-loader',
+            options: {
+                attrs: ['img:src', ':srcset'],
+            },
         },],
     },
 };
